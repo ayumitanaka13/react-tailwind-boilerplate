@@ -22,10 +22,10 @@ In this file, write like this.
 const tailwindcss = require("tailwindcss");
 
 module.exports = {
-&nbsp;plugins: [
-&emsp;tailwindcss("./tailwind.config.js"),
-&emsp;require("autoprefixer"),
-&nbsp;],
+    plugins: [
+        tailwindcss("./tailwind.config.js"),
+        require("autoprefixer"),
+    ],
 };
 ```
 
@@ -49,12 +49,12 @@ In this file, write like this.
 
 ```
 "scripts": {
-&nbsp;"start": "npm run watch:css && react-scripts start",
-&nbsp;"build": "npm run build:css && react-scripts build",
-&nbsp;"test": "react-scripts test",
-&nbsp;"eject": "react-scripts eject",
-&nbsp;"build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-&nbsp;"watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
 }
 ```
 
