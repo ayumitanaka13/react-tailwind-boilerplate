@@ -2,10 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pacifico: ["Pacifico", "cursive"],
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
