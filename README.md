@@ -1,8 +1,8 @@
 # Getting Started with Create React App with TailwindCSS
 
-##### 1. Create React App
+#### 1. Create React App
 
-`create-react-app {app-name} --use-npm`
+##### `create-react-app {app-name} --use-npm`
 
 ### `cd {app-name}`
 
