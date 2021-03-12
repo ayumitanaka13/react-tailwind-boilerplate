@@ -1,6 +1,8 @@
 # Getting Started with Create React App with TailwindCSS
 
-### `create-react-app {app-name} --use-npm`
+### 1. Create React App
+
+#### `create-react-app {app-name} --use-npm`
 
 ### `cd {app-name}`
 
@@ -71,4 +73,7 @@ If you want to
 - directive to extract common utility patterns to CSS component classes
 
 Check develop branch!
-[develop](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
+
+### [develop](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
+
+### `npm i @fullhuman/postcss-purgecss`
