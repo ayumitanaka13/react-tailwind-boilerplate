@@ -2,21 +2,25 @@
 
 #### 1. Create React App
 
-##### `create-react-app {app-name} --use-npm`
+`create-react-app {app-name} --use-npm`
 
-### `cd {app-name}`
+#### 2. Move to App directory
 
-### `npm i -D tailwindcss postcss-cli autoprefixer`
+`cd {app-name}`
 
-### `npx tailwind init --full`
+#### 3. Move to App directory
+
+`npm i -D tailwindcss postcss-cli autoprefixer`
+
+`npx tailwind init --full`
 
 This is the full of tailwind.config.js file. Change the file name as "tailwind-default.config.js" and use it as a reference.
 
-### `npx tailwind init`
+`npx tailwind init`
 
 This is the empty tailwind.config.js file. Add your customized tailwindCSS variable on this file.
 
-### `touch postcss.config.js`
+`touch postcss.config.js`
 
 In this file, write like this.
 
@@ -60,7 +64,7 @@ In this file, write like this.
 }
 ```
 
-### `npm start`
+`npm start`
 
 Compile start. Having a full of normalize CSS on main.css
 
