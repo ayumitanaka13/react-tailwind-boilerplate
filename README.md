@@ -12,20 +12,22 @@ This is the full of tailwind.config.js file. Change the file name as "tailwind-d
 
 ### `npx tailwind init`
 
-This is the empty tailwind.config.js file. Customize tailwindCSS variable on this file.
+This is the empty tailwind.config.js file. Add your customized tailwindCSS variable on this file.
 
 ### `touch postcss.config.js`
 
 In this file, write like this.
 
+```
 const tailwindcss = require("tailwindcss");
 
-module.exports = {  
-plugins: [
-tailwindcss("./tailwind.config.js"),
-require("autoprefixer"),
-],  
+module.exports = {
+&nbsp;plugins: [
+&emsp;tailwindcss("./tailwind.config.js"),
+&emsp;require("autoprefixer"),
+&nbsp;],
 };
+```
 
 ### Make a directry named {assets} in the src directry.
 
@@ -35,23 +37,27 @@ require("autoprefixer"),
 
 In this file, write like this.
 
-@import "tailwindcss/base";  
-@import "tailwindcss/components";  
+```
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 @import "tailwindcss/utilities";
+```
 
 ### Modify package.json
 
 In this file, write like this.
 
-"scripts": {  
-"start": "npm run watch:css && react-scripts start",  
-"build": "npm run build:css && react-scripts build",  
-"test": "react-scripts test",  
-"eject": "react-scripts eject",  
-"build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",  
-"watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+```
+"scripts": {
+&nbsp;"start": "npm run watch:css && react-scripts start",
+&nbsp;"build": "npm run build:css && react-scripts build",
+&nbsp;"test": "react-scripts test",
+&nbsp;"eject": "react-scripts eject",
+&nbsp;"build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+&nbsp;"watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
 }
+```
 
 ### `npm start`
 
-Have full of normalize CSS on main.css
+Compile start. Having a full of normalize CSS on main.css
