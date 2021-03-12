@@ -84,7 +84,7 @@ If you want to
 - apply some base styles to specific elements.
 - directive to extract common utility patterns to CSS component classes.
 
-### [Check develop branch!](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
+## [Check develop branch!](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
 
 #### 12. Install @fullhuman/potcss-purgecss
 
@@ -114,4 +114,5 @@ Once you purged, you can't add classes that you haven't use. In this case, just 
 #### Reference
 
 [TailWind CSS Introduction](https://www.appliz.fr/blog/tailwindcss-introduction)
+
 [How to setup Tailwind with PurgeCSS and PostCSS](https://flaviocopes.com/tailwind-setup/)
