@@ -1,20 +1,32 @@
 # Getting Started with Create React App with TailwindCSS
 
-### `create-react-app {app-name} --use-npm`
+#### 1. Create React App with npm
 
-### `cd {app-name}`
+`create-react-app {app-name} --use-npm`
 
-### `npm i -D tailwindcss postcss-cli autoprefixer`
+#### 2. Move to App directory
 
-### `npx tailwind init --full`
+`cd {app-name}`
 
-This is the full of tailwind.config.js file. Change the file name as "tailwind-default.config.js" and use it as a reference.
+#### 3. Install postcss and autoprefixer
 
-### `npx tailwind init`
+`npm i -D tailwindcss postcss-cli autoprefixer`
+
+#### 4. Install default tailwind config file
+
+`npx tailwind init --full`
+
+This is the default tailwind.config.js file. Change the file name as "tailwind-default.config.js" and use it as a reference.
+
+#### 5. Install tailwind config file
+
+`npx tailwind init`
 
 This is the empty tailwind.config.js file. Add your customized tailwindCSS variable on this file.
 
-### `touch postcss.config.js`
+#### 6. Create postcss config file
+
+`touch postcss.config.js`
 
 In this file, write like this.
 
@@ -29,11 +41,11 @@ module.exports = {
 };
 ```
 
-### Make a directry named {assets} in the src directry.
+#### 7. Make a directory named {assets} in the src directory
 
-### Make a css file named {main.css} in the assets directry.
+#### 8. Make a css file named {main.css} in the assets directory
 
-### Make a css file named {tailwind.css} in the assets directry.
+#### 9. Make a css file named {tailwind.css} in the assets directory
 
 In this file, write like this.
 
@@ -43,7 +55,7 @@ In this file, write like this.
 @import "tailwindcss/utilities";
 ```
 
-### Modify package.json
+#### 10. Modify package.json
 
 In this file, write like this.
 
@@ -58,6 +70,49 @@ In this file, write like this.
 }
 ```
 
-### `npm start`
+#### 11. Run React app and start compile tailwind.CSS to main.css
 
-Compile start. Having a full of normalize CSS on main.css
+`npm start`
+
+Run React app and start CSS compile. After compile, you can see the long lines of normalize CSS on main.css file.
+
+# Wanna customize more?
+
+If you want to
+
+- delete unnecessary normalize CSS classes.
+- apply some base styles to specific elements.
+- directive to extract common utility patterns to CSS component classes.
+
+## [Check develop branch!](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
+
+#### 12. Install @fullhuman/potcss-purgecss
+
+`npm i @fullhuman/postcss-purgecss`
+
+#### 13. Modify postcss.config.js
+
+In this file, write like this.
+
+```
+const tailwindcss = require("tailwindcss");
+
+module.exports = {
+    plugins: [
+        tailwindcss("./tailwind.config.js"),
+        require("autoprefixer"),
+        require("@fullhuman/postcss-purgecss")({
+            content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+            defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+        }),
+    ],
+};
+```
+
+Once you purged, you can't add classes that you haven't use. In this case, just comment out the purge part in plugins on postcss.config.js. When you are done, uncomment this part. You will see reduced size of main.css file.
+
+#### Reference
+
+[TailWind CSS Introduction](https://www.appliz.fr/blog/tailwindcss-introduction)
+
+[How to setup Tailwind with PurgeCSS and PostCSS](https://flaviocopes.com/tailwind-setup/)
