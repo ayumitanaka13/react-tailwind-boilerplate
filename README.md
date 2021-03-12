@@ -61,3 +61,14 @@ In this file, write like this.
 ### `npm start`
 
 Compile start. Having a full of normalize CSS on main.css
+
+# Wanna customize more?
+
+If you want to
+
+- delete unnecessary normalize CSS classes
+- apply some base styles to specific elements
+- directive to extract common utility patterns to CSS component classes
+
+Check develop branch!
+[develop](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
