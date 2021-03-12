@@ -20,14 +20,14 @@ In this file, write like this.
 
 const tailwindcss = require("tailwindcss");
 
-module.exports = {
+module.exports = {  
 plugins: [
 tailwindcss("./tailwind.config.js"),
 require("autoprefixer"),
-],
+],  
 };
 
-### Make a directry {assets} in the src directry.
+### Make a directry named {assets} in the src directry.
 
 ### Make a css file named {main.css} in the assets directry.
 
@@ -35,20 +35,20 @@ require("autoprefixer"),
 
 In this file, write like this.
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+@import "tailwindcss/base";  
+@import "tailwindcss/components";  
 @import "tailwindcss/utilities";
 
 ### Modify package.json
 
 In this file, write like this.
 
-"scripts": {
-"start": "npm run watch:css && react-scripts start",
-"build": "npm run build:css && react-scripts build",
-"test": "react-scripts test",
-"eject": "react-scripts eject",
-"build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+"scripts": {  
+"start": "npm run watch:css && react-scripts start",  
+"build": "npm run build:css && react-scripts build",  
+"test": "react-scripts test",  
+"eject": "react-scripts eject",  
+"build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",  
 "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
 }
 
