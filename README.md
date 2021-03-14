@@ -111,6 +111,10 @@ module.exports = {
 
 Once you purged, you can't add classes that you haven't use. In this case, just comment out the purge part in plugins on postcss.config.js. When you are done, uncomment this part. You will see reduced size of main.css file.
 
+# Wanna add dark mode?
+
+## [Check test branch!](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
+
 #### Reference
 
 [TailWind CSS Introduction](https://www.appliz.fr/blog/tailwindcss-introduction)
