@@ -113,10 +113,12 @@ Once you purged, you can't add classes that you haven't use. In this case, just 
 
 # Wanna add dark mode?
 
-## [Check test branch!](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop)
+## [Check test branch!](https://github.com/ayumitanaka13/react-tailwind-boilerplate/tree/develop-dark)
 
 #### Reference
 
 [TailWind CSS Introduction](https://www.appliz.fr/blog/tailwindcss-introduction)
 
 [How to setup Tailwind with PurgeCSS and PostCSS](https://flaviocopes.com/tailwind-setup/)
+
+[React Dark Mode with Tailwind 2.0](https://www.youtube.com/watch?v=2IfTD-muRF4&ab_channel=DailyWebCoding)
